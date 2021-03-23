@@ -1,0 +1,20 @@
+import java.util.*;
+class Arraylistdemo 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList i=new ArrayList();
+		i.add(1);
+		i.add("A");
+		i.add("B");
+		i.add(2);
+		i.add(3);
+		//List t=Collections.synchronizedList(i);
+		//System.out.println(i);
+		//System.out.println(i.get(3));
+		System.out.println(i.indexOf("B"));
+		//System.out.println(i.set(2,"D"));
+		System.out.println(i);
+
+	}
+}

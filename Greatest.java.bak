@@ -1,0 +1,28 @@
+import java.util.*;
+class Greatest
+{
+	public static void main(String[] args) 
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("enter the size");
+		int x=scanner.nextInt();
+		int[] arr=new int[x];
+		System.out.print("enter the array value");
+		for(int i=0;i<x;i++)
+		{
+			arr[i]=scanner.nextInt();
+		}
+		int large=arr[0];
+		int large1=0;
+		for(int j=1;j<x;j++)
+		{
+			if(arr[j]>large)
+			{	
+				large1=large;
+				large=arr[j];
+			}
+		}
+		System.out.println(large);
+		System.out.println(large1);
+	}
+}
